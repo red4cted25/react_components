@@ -4,7 +4,7 @@ import './css/normalize.css';
 import './css/variables.css';
 import Home from './Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ProfileCard from './WIP/ProfileCard/ProfileCard';
+import ProfileCard from './Components/WIP/ProfileCard/ProfileCard';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },

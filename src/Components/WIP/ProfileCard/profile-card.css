@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .profile-card {
     background-color: var(--color-background);
     border-radius: var(--border-radius);
@@ -46,9 +49,10 @@
     margin-bottom: var(--spacing-sm);
 }
 
-.profile-details > p {
+.profile-details > a {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-md);
+    text-decoration: none;
 }
 
 .social-media-links {
