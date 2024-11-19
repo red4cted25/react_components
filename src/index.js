@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './css/normalize.css';
+import './css/variables.css';
+import Home from './Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ProfileCard from './WIP/ProfileCard';
+import ProfileCard from './WIP/ProfileCard/ProfileCard';
 
 const router = createBrowserRouter([
-  { path: '/', element: <App /> },
+  { path: '/', element: <Home /> },
   { path: '/profile-card', element: <ProfileCard /> }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));

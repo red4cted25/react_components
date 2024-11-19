@@ -1,11 +1,11 @@
-import '../css/profile-card.css';
+import './profile-card.css';
 
 export default function ProfileCard({firstName, lastName, email, profile, socialMediaLinks, bio}){
     let test = {
         firstName: 'John',
         lastName: 'Doe',
         email: 'john.doe@example.com',
-        profile: 'https://example.com/profile.jpg',
+        profile: 'https://picsum.photos/id/40/4106/2806',
         socialMediaLinks: ['https://github.com/johndoe', 'https://twitter.com/johndoe'],
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus semper, ultricies neque ac, maximus dolor. Vestibulum faucibus lobortis orci, et condimentum felis sagittis vel. Donec vel posuere est, vel ullamcorper neque. Sed vel libero at ex tincidunt placerat. Nunc convallis, ipsum non consectetur dictum, ligula mi faucibus ligula, ac viverra nisi felis at dolor.'
     }
