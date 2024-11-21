@@ -85,8 +85,8 @@
   color: var(--color-text-secondary);
 }
 
-/* Add Component Card */
-.add-component {
+/* Upcoming Component Card */
+.upcoming-component {
   border: 2px dashed var(--color-border);
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@
   cursor: pointer;
 }
 
-.add-component:hover {
+.upcoming-component:hover {
   border-color: var(--color-primary);
   background-color: var(--color-background);
 }
@@ -105,7 +105,7 @@
   margin-bottom: 0.5rem;
 }
 
-.add-component h3 {
+.upcoming-component h3 {
   margin: 0 0 0.5rem;
   font-size: 1.25rem;
   color: var(--color-text-primary);

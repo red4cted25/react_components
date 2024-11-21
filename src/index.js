@@ -4,11 +4,11 @@ import './css/normalize.css';
 import './css/variables.css';
 import Home from './Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ProfileCard from './Components/WIP/ProfileCard/ProfileCard';
+import ProfilePage from './ProfileCardPage';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
-  { path: '/profile-card', element: <ProfileCard /> }
+  { path: '/profile-card', element: <ProfilePage /> }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

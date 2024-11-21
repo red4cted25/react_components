@@ -41,8 +41,8 @@ const ComponentLibrary = () => {
           </a>
         ))}
 
-          {/* Add New Component Card */}
-          <div className="component-card add-component">
+          {/* Upcoming Component Card */}
+          <div className="component-card upcoming-component">
             <div className="component-card-content">
               <div className="add-icon">+</div>
               <h3>Add New Component</h3>
