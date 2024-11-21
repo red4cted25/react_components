@@ -8,6 +8,12 @@ const ComponentLibrary = () => {
       name: 'Profile Card',
       description: 'A versatile card component for displaying user profiles',
       path: '/profile-card'
+    },
+    {
+      id: 'footer',
+      name: 'Footer',
+      description: 'A component for displaying a footer for a website/company site',
+      path: '/footer'
     }
     // Add more components here as needed
   ];
@@ -44,9 +50,9 @@ const ComponentLibrary = () => {
           {/* Upcoming Component Card */}
           <div className="component-card upcoming-component">
             <div className="component-card-content">
-              <div className="add-icon">+</div>
-              <h3>Add New Component</h3>
-              <p>Create and add more components to your library</p>
+              <div className="coming-soon-icon">🚧</div>
+              <h3>Coming Soon</h3>
+              <p>More components are on their way. Stay tuned!</p>
             </div>
           </div>
         </div>
