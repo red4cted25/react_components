@@ -5,10 +5,12 @@ import './css/variables.css';
 import Home from './Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProfilePage from './ProfileCardPage';
+import FooterPage from './FooterPage';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
-  { path: '/profile-card', element: <ProfilePage /> }
+  { path: '/profile-card', element: <ProfilePage /> },
+  { path: '/footer', element: <FooterPage /> }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

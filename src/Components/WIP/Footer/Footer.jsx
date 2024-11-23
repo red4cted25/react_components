@@ -2,11 +2,18 @@ import './footer.css'
 import { FaGithub, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 function footerClassic() {
+    const scrollTop = () => {
+        window.scrollTo({
+          top: 0, // Scroll to the very top of the page
+          behavior: 'smooth', // Smooth scrolling effect
+        });
+    }
+    
     return (
         <footer className="footer-classic">
             <section className="footer-content">
                 <div className="footer-logo-info">
-                    <img src="logo.png" alt="Logo" />
+                    <img src="https://res.cloudinary.com/drnaycy06/image/upload/v1731009869/samples/logo.png" alt="Logo" />
                     <p className="footer-info">123 Sesame Street</p>
                     <p className="footer-info">(212) 875-6890</p>
                     <p className="footer-info">Web.ShowKids@sesame.org</p>
@@ -41,7 +48,7 @@ function footerClassic() {
                     </div>
                 </section>
             </section>
-            <div className="up-button"></div>
+            <div className="up-button" onClick={scrollTop}>↑</div>
             <div className="footer-end">
                 <p>Copyright © 2024 [Company Name] Developed by <a href="https://github.com/red4cted25" id='footer-dev-link'>Nico Diaz</a></p>
                 <div className="social-media-icons">
