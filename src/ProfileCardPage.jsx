@@ -1,4 +1,4 @@
-import ProfileCard from "./Components/Completed/ProfileCard/ProfileCard"
+import ProfileCard from "./Components/Completed/Cards/ProfileCard"
 
 function ProfilePage() {
     let test1 = {

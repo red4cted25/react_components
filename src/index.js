@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/normalize.css';
 import './css/variables.css';
+import './css/tailwind.css';
 import Home from './Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProfilePage from './ProfileCardPage';
