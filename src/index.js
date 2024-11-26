@@ -7,11 +7,13 @@ import Home from './Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProfilePage from './ProfileCardPage';
 import FooterPage from './FooterPage';
+import GalleryPage from './GalleryPage';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/profile-card', element: <ProfilePage /> },
-  { path: '/footer', element: <FooterPage /> }
+  { path: '/footer', element: <FooterPage /> },
+  { path: '/gallery', element: <GalleryPage /> }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

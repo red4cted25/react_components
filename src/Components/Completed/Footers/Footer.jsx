@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaXTwitter} from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaXTwitter, FaFacebook, FaLink} from "react-icons/fa6";
 
 const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
     return (
@@ -29,7 +29,7 @@ const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                {link}
+                                {link || "Learn More"}
                             </a>
                         </div>
                     ))}
@@ -39,9 +39,24 @@ const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
                 <div className="footer-social">
                     <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
                     <div className="flex gap-4">
-                        {socialLinks.github && ( <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#3498DB]" > <FaGithub /> </a> )}
-                        {socialLinks.instagram && ( <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#E74C3C]" > <FaInstagram /> </a> )}
-                        {socialLinks.facebook && ( <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#1DA1F2]" > <FaFacebook /> </a> )}
+                        {socialLinks.map((socialLink) => {
+                            const icon = URL(socialLink).hostname.replace('www.', '').split('.')[0];
+                            return (
+                                <a
+                                    href={socialLink}
+                                    key={icon}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xl hover:text-[#ECF0F1]"
+                                >
+                                    {icon === "twitter" && <FaXTwitter />}
+                                    {icon === "github" && <FaGithub />}
+                                    {icon === "instagram" && <FaInstagram />}
+                                    {icon === "facebook" && <FaFacebook />}
+                                    {icon && <FaLink />}
+                                </a>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
