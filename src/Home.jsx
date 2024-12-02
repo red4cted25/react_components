@@ -1,4 +1,3 @@
-import './home.css';
 const ComponentLibrary = () => {
   const components = [
     {
