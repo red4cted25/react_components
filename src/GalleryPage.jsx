@@ -1,4 +1,4 @@
-import GalleryMasonry from './Components/WIP/Gallery/Gallery'
+import Masonry from './Components/WIP/Gallery/Masonry'
 
 function GalleryPage() {
     const images1 = [
@@ -47,7 +47,7 @@ function GalleryPage() {
         <div className="container">
             <h2 style={{textAlign: 'center', color: 'blue', fontSize: '2vw', marginBottom: '0'}}>Gallery</h2>
             <div className="cards" style={{display: 'flex', gap: '2vw', justifyContent: 'center'}}>
-                <GalleryMasonry images="images2" />
+                <Masonry images="images2" />
             </div>
         </div>
     )

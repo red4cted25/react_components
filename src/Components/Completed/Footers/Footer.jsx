@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram, FaXTwitter, FaFacebook, FaLink} from "react-icons/fa6";
 
-const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
+const FooterClassic = ({ logo, about, socialLinks, services, orgName = [] }) => {
     return (
         <footer className="bg-[#2C3E50] text-white py-8">
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,7 +40,7 @@ const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
                     <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
                     <div className="flex gap-4">
                         {socialLinks.map((socialLink) => {
-                            const icon = URL(socialLink).hostname.replace('www.', '').split('.')[0];
+                            const icon = new URL(socialLink).hostname.replace('www.', '').split('.')[0];
                             return (
                                 <a
                                     href={socialLink}
@@ -53,7 +53,7 @@ const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
                                     {icon === "github" && <FaGithub />}
                                     {icon === "instagram" && <FaInstagram />}
                                     {icon === "facebook" && <FaFacebook />}
-                                    {icon && <FaLink />}
+                                    {!["twitter", "github", "instagram", "facebook"].includes(icon) && <FaLink />}
                                 </a>
                             );
                         })}
@@ -64,7 +64,7 @@ const FooterClassic = ({ logo, about, socialLinks, services = [] }) => {
             {/* Footer End */}
             <div className="mt-8 text-center text-sm">
                 <p>
-                    Copyright © {new Date().getFullYear()} [Organization Name]. All Rights Reserved.
+                    Copyright © {new Date().getFullYear()} {orgName}. All Rights Reserved.
                 </p>
             </div>
         </footer>

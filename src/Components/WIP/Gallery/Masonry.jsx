@@ -1,6 +1,6 @@
-const GalleryMasonry = ({ images }) => {
+const Masonry = ({ images }) => {
     return(
-        <div className="grid grid-cols-masonry auto-rows-10px gap-20px">
+        <div className="grid grid-cols-sm auto-rows-10px gap-20px">
             {images.map((image) => {
                 return (
                     <div className=""></div>
@@ -10,4 +10,4 @@ const GalleryMasonry = ({ images }) => {
     )
 }
 
-export default GalleryMasonry;
+export default Masonry;
