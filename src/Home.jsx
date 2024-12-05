@@ -13,18 +13,11 @@ const ComponentLibrary = () => {
       path: '/footer'
     },
     {
-      id: 'masonry',
-      name: 'Masonry',
-      description: 'A gallery component for displaying a masonry gallery with pictureName, pictureURL, and altText as props',
-      path: '/gallery/masonry'
+      id: 'grid',
+      name: 'Grid Gallery',
+      description: 'A gallery component for displaying a grid gallery with pictureName, pictureURL, and altText as props',
+      path: '/gallery'
     },
-    {
-      id: 'carousel',
-      name: 'Carousel',
-      description: 'A gallery component for displaying a image carousel with pictureName, pictureURL, and altText as props',
-      path: '/gallery/carousel'
-    }
-    
   ];
 
   return (
